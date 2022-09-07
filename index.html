@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JPlayground</title>
+</head>
+<body>
+    <h1>JQuery Playground</h1>
+    <nav>
+        <label for="font">Font: </label>
+        <select name="font" id="font">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Arial">Arial</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Cambria">Cambria</option>
+        </select>
+        <label for="speed">Animation Speed: </label>
+        <select name="speed" id="speed">
+            <option value="slow">slow</option>
+            <option value="medium">medium</option>
+            <option value="fast">fast</option>
+            
+        </select>
+        <label>Light</label>
+        <div id="switch">
+            <div id="button"></div>
+        </div>
+        <label>Dark</label>
+    </nav>
+    
+    <div id="mainContainer">
+        <div class="box" id="fontContainer">
+            <h2>Font Change</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Recusandae, esse delectus 
+                consequatur impedit ipsa doloremque distinctio 
+                praesentium nostrum quidem ea amet ab 
+                placeat nihil quaerat maxime suscipit ullam 
+                repellendus vitae, cumque ipsam labore 
+                beatae error dolore debitis? Incidunt, 
+                libero culpa!</p>
+        </div>
+        <div class="box" id="colorChangeContainer">
+            <h2>Color Change</h2>
+            <button id="red"></button>
+            <button id="orange"></button>
+            <button id="yellow"></button>
+            <button id="green"></button>
+            <button id="blue"></button>
+            <button id="indigo"></button>
+            <button id="purple"></button>
+            <button id="pink"></button>
+            <button id="brown"></button>
+            <button id="magenta"></button>
+            <button id="cyan"></button>
+            <button id="limegreen"></button>
+            <button id="skyblue"></button>
+            <button id="yellowgreen"></button>
+            <button id="orangered"></button>
+        </div>
+        <div class="box" id="animationContainer">
+            <h2>Animation Speed</h2>
+            <div id="square"></div>
+        </div>
+        <div class="box" id="keysContainer">
+            <h2>Key Press</h2>
+            <p id="keyResult">Enter a key to show message.</p>
+        </div>
+    </div>
+    <p id="cpy">Practice Site By Ryan Park &copy; 2022</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="manager.js"></script>
+</body>
+</html>
